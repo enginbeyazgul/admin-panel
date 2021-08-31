@@ -1,6 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap");
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .login form, .container .login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .login form input {
+  background-color: transparent;
+  outline: none;
+  color: aliceblue;
+  padding: 7px;
+  border: 1px solid aliceblue;
+  transition: all 0.4s;
+  margin: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Chakra Petch", sans-serif;
+}
+
 body {
   background-color: #333;
   color: aliceblue;
-  font-family: "Chakra Petch", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  height: 100vh;
+}
+.container .login {
+  width: 35%;
+  height: 35%;
+  border-left: 1px solid;
+  border-image: linear-gradient(to top, #3CD447 25%, #FAFDFE 75%) 30 !important;
+  border-right: 1px solid aliceblue;
+  padding: 15px;
+}
+.container .login img {
+  width: 150px;
+  margin-bottom: 50px;
+  border: 1px solid #3CD447;
+  border-radius: 50%;
+  padding: 3px;
+}
+.container .login form input {
+  width: 220px;
+  text-align: center;
+  font-size: 18px;
+}
+.container .login form input:focus {
+  border-color: #3CD447;
+}
+.container .login form input[type=submit] {
+  width: unset;
+}
+.container .login form input[type=submit]:hover {
+  cursor: pointer;
+  border-color: #3CD447;
 }

@@ -7,8 +7,15 @@
     <link rel="stylesheet" href="<?=PATH.'view/css/dist/main.css?v='.time()?>">
 </head>
 <body>
-    <h1>
-        Login sayfası
-    </h1>
+    <div class="container">
+        <div class="login">
+            <img src="https://www.namedya.com/view/img/namedya5b.png" alt="logo">
+            <form action="" method="post">
+                <input name="user" type="text">
+                <input name="pass" type="password">
+                <input type="submit" value="Giriş yap">
+            </form>
+        </div>
+    </div>
 </body>
 </html>

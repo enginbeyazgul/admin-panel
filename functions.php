@@ -5,6 +5,11 @@ function controller($controllerName)
     $controllerName = strtolower($controllerName);
     return 'controller/'.$controllerName.'.php';
 }
+function model($modelName)
+{
+    $modelName = strtolower($modelName);
+    return 'model/'.$modelName.'.php';
+}
 function view($viewName)
 {
     $viewName = strtolower($viewName);

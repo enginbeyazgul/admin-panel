@@ -1,9 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
 $renk1: aliceblue;
 $renk2: #333;
+$renk3: #3CD447;
+%flex-center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flex-column
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+%form-eleman
+{
+    background-color: transparent;
+    outline: none;
+    color: $renk1;
+    padding: 7px;
+    border: 1px solid $renk1;
+    transition: all 0.4s;
+    margin: 10px;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Chakra Petch', sans-serif;
+}
 body
 {
     background-color: $renk2;
     color: $renk1;
-    font-family: 'Chakra Petch', sans-serif;
+}
+.container
+{
+    @extend %flex-center;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    .login
+    {
+        @extend %flex-column;
+        width: 35%;
+        height: 35%;
+        border-left: 1px solid;
+        border-image: linear-gradient(to top, #3CD447 25%, #FAFDFE 75%) 30!important;
+        border-right: 1px solid $renk1;
+        padding: 15px;
+        img
+        {
+            width: 150px;
+            margin-bottom: 50px;
+            border: 1px solid $renk3;
+            border-radius: 50%;
+            padding: 3px;
+        }
+        form
+        {
+            @extend %flex-column;
+            input
+            {
+                @extend %form-eleman;
+                width: 220px;
+                text-align: center;
+                font-size: 18px;
+                &:focus 
+                {
+                    border-color: $renk3;
+                }
+            }
+            input[type="submit"]
+            {
+                width: unset;
+                &:hover 
+                {
+                    cursor: pointer;
+                    border-color: $renk3;
+                }
+            }
+        }
+    }
 }
