@@ -17,7 +17,7 @@
   outline: none;
   color: aliceblue;
   padding: 7px;
-  border: 1px solid aliceblue;
+  border: none;
   transition: all 0.4s;
   margin: 10px;
 }
@@ -53,18 +53,92 @@ body {
   border-radius: 50%;
   padding: 3px;
 }
+.container .login form .fontAwesome {
+  font-family: Helvetica, "FontAwesome", sans-serif;
+}
+.container .login form input::placeholder {
+  text-align: right;
+}
 .container .login form input {
   width: 220px;
+  border-bottom: 1px solid aliceblue;
   text-align: center;
   font-size: 18px;
+  background-color: transparent;
 }
 .container .login form input:focus {
   border-color: #3CD447;
 }
 .container .login form input[type=submit] {
   width: unset;
+  border-bottom: 1px solid aliceblue;
 }
 .container .login form input[type=submit]:hover {
   cursor: pointer;
   border-color: #3CD447;
+}
+
+.sidebar .brand, .sidebar .user {
+  display: flex;
+  justify-content: center;
+  width: 240px;
+}
+
+.sidebar {
+  border-right: 1px solid aliceblue;
+  position: fixed;
+  display: flex;
+  width: 240px;
+  height: 100vh;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+.sidebar span {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font-size: 17px;
+}
+.sidebar .user {
+  height: 50px;
+  align-items: center;
+}
+.sidebar .user a {
+  position: relative;
+  left: 65px;
+  color: aliceblue;
+  font-size: 18px;
+  transition: all ease-out 0.4s;
+}
+.sidebar .user a:hover {
+  color: #3CD447;
+}
+.sidebar .brand {
+  padding: 15px;
+  height: 100px;
+}
+.sidebar .brand img {
+  border-radius: 50%;
+  border: 1px solid #3CD447;
+  padding: 2px;
+}
+.sidebar .side-menu {
+  width: 100%;
+}
+.sidebar .side-menu li {
+  list-style: none;
+}
+.sidebar .side-menu a {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: aliceblue;
+  padding: 15px;
+  transition: all ease-out 0.4s;
+}
+.sidebar .side-menu a:hover {
+  color: #3CD447;
+  border-bottom: 1px solid #3CD447;
 }
