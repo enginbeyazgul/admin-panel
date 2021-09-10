@@ -19,16 +19,16 @@
         </div>
         <ul class="side-menu">
             <li>
-                <a href="#"><i class="fas fa-tachometer-alt"></i>&nbsp;&nbsp;Anasayfa Düzenle</a>
+                <a href="panel"><i class="fas fa-tachometer-alt"></i>&nbsp;&nbsp;Anasayfa Düzenle</a>
             </li>
             <li>
-                <a href="#"><i class="fas fa-address-card"></i>&nbsp;&nbsp;Hakkımımızda Düzenle</a>
+                <a href="hakkimizda"><i class="fas fa-address-card"></i>&nbsp;&nbsp;Hakkımımızda Düzenle</a>
             </li>
             <li>
-                <a href="#"><i class="fab fa-teamspeak"></i>&nbsp;&nbsp;Ekip Düzenle</a>
+                <a href="ekip"><i class="fab fa-teamspeak"></i>&nbsp;&nbsp;Ekip Düzenle</a>
             </li>
             <li>
-                <a href="#"><i class="fas fa-cog"></i>&nbsp;&nbsp;Site Ayarları</a>
+                <a href="ayarlar"><i class="fas fa-cog"></i>&nbsp;&nbsp;Site Ayarları</a>
             </li>
         </ul>
     </div>

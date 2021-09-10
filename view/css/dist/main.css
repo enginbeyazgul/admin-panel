@@ -56,6 +56,11 @@ body {
 .container .login form .fontAwesome {
   font-family: Helvetica, "FontAwesome", sans-serif;
 }
+.container .login form .baslik {
+  display: flex;
+  width: 100%;
+  margin: 0 0 0 20px;
+}
 .container .login form input::placeholder {
   text-align: right;
 }
@@ -103,10 +108,11 @@ body {
 .sidebar .user {
   height: 50px;
   align-items: center;
+  border-bottom: 1px solid aliceblue;
 }
 .sidebar .user a {
   position: relative;
-  left: 65px;
+  left: 25%;
   color: aliceblue;
   font-size: 18px;
   transition: all ease-out 0.4s;
@@ -141,4 +147,43 @@ body {
 .sidebar .side-menu a:hover {
   color: #3CD447;
   border-bottom: 1px solid #3CD447;
+}
+
+.panel-container {
+  position: relative;
+  left: 20%;
+  width: 77.5%;
+}
+.panel-container ul {
+  list-style: none;
+  position: relative;
+  height: 42px;
+  margin-left: 41.5%;
+}
+.panel-container ul li {
+  border-radius: 0 0 15px 15px;
+  float: left;
+  text-decoration: none;
+  padding: 8px 24px 8px 24px;
+  display: block;
+  margin-right: 20px;
+  color: aliceblue;
+  border-bottom: 1px solid aliceblue;
+}
+.panel-container ul li:hover {
+  background-color: #787878;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.panel-container .tab {
+  text-align: center;
+  padding: 25px;
+  position: relative;
+  border: 1px solid #555;
+  margin-top: 50px;
+}
+.panel-container .aktif {
+  color: #3CD447;
+  border-bottom-color: #3CD447;
+  transition-duration: 0.4s;
 }

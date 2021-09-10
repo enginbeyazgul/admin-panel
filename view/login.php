@@ -12,6 +12,9 @@
         <div class="login">
             <img src="https://www.namedya.com/view/img/namedya5b.png" alt="logo">
             <form action="" method="post">
+                <div class="baslik">
+                    <h3>Admin Paneli</h3>
+                </div>
                 <input name="user" type="text" class="fontAwesome" name="emailAddress" placeholder="&#xf007;">
                 <input name="pass" type="password" class="fontAwesome" name="emailAddress" placeholder="&#xf023;">
                 <input type="submit" value="Giriş yap">
